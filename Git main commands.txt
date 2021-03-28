@@ -1,4 +1,17 @@
 git init
 git add .
 git status
+git status -s
+git commit -m "new changes"
 git commit -a -m "new changes"
+git rm --cached .java (or any other file type - to remove)
+git log
+git commit --ammend
+git config --global core.editor "notepad"
+touch NewTextFile.txt (to create a new file)
+git restore --staged src/AnyFileYouNeedToUnstage.txt
+git restore src/AnyFileYouNeedToRestore.txt
+git remote -v (to check if local is connected to remote)
+git remote add origin https://github.com/SingingFoot/API-Documentation.git
+git push origin -u master
+
