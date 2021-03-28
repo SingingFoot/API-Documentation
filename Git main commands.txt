@@ -12,6 +12,7 @@ touch NewTextFile.txt (to create a new file)
 git restore --staged src/AnyFileYouNeedToUnstage.txt
 git restore src/AnyFileYouNeedToRestore.txt
 git remote -v (to check if local is connected to remote)
-git remote add origin https://github.com/SingingFoot/API-Documentation.git
-git push origin -u master
-
+git remote add origin https://github.com/SingingFoot/API-Documentation.git (to connect remote and local)
+git push origin -u master (to copy from local to remote)
+git clone https://github.com/SingingFoot/API-Documentation.git (to copy from remote to local)
+git remote set-url origin git@github.com:SingingFoot/API-Documentation.git
