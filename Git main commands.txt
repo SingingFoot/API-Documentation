@@ -1,3 +1,4 @@
+Local repository
 git init
 git add .
 git status
@@ -11,8 +12,37 @@ git config --global core.editor "notepad"
 touch NewTextFile.txt (to create a new file)
 git restore --staged src/AnyFileYouNeedToUnstage.txt
 git restore src/AnyFileYouNeedToRestore.txt
+
+Remote repository
 git remote -v (to check if local is connected to remote)
 git remote add origin https://github.com/SingingFoot/API-Documentation.git (to connect remote and local)
 git push origin -u master (to copy from local to remote)
 git clone https://github.com/SingingFoot/API-Documentation.git (to copy from remote to local)
 git remote set-url origin git@github.com:SingingFoot/API-Documentation.git
+
+Branches
+git branch NEW BRANCH (to create a new branch)
+git branch (to see all the branches)
+git branch -r (to check which branches exist remotely)
+git branch -a (to see all local and remote branches)
+git checkout -b NEW BRANCH (to create and change to the new branch simultaneously)
+git checkout master (to get back to master branch)
+
+Delete a branch
+
+Git will not let you delete the branch you are currently on so you must make sure to checkout a branch that you are NOT deleting. SO: git checkout master (to get back to master branch)
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+ 
+If you are sure you want to delete it, run 'git branch -D Branch_A'.
+
+git branch -D Branch_A
+Deleted branch Branch_A (was 3b3b8be).
+
+
+
+
