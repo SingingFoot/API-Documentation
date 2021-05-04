@@ -16,6 +16,7 @@ git restore src/AnyFileYouNeedToRestore.txt
 Remote repository
 git remote -v (to check if local is connected to remote)
 git remote add origin https://github.com/SingingFoot/API-Documentation.git (to connect remote and local)
+git fetch origin -u master (to...
 git push origin -u master (to copy from local to remote)
 git clone https://github.com/SingingFoot/API-Documentation.git (to copy from remote to local)
 git remote set-url origin git@github.com:SingingFoot/API-Documentation.git
@@ -38,11 +39,8 @@ git branch -d localBranchName
 // delete branch remotely
 git push origin --delete remoteBranchName
  
-If you are sure you want to delete it, run 'git branch -D Branch_A'.
-
-git branch -D Branch_A
-Deleted branch Branch_A (was 3b3b8be).
-
-
-
+ПОМИЛКА:
+fatal: refusing to merge unrelated histories
+РІШЕННЯ:
+git pull origin main --allow-unrelated-histories
 
